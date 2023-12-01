@@ -20,7 +20,7 @@ export default function TabScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Text>タブ管理画面</Text>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
     </View>
   );
 }

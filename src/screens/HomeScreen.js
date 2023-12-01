@@ -5,6 +5,9 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 // icons import
 import Icon from 'react-native-vector-icons/FontAwesome';
 
+// components import
+import Checkmark from '../components/Checkmark';
+
 export default function HomeScreen({ navigation }) {
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -20,8 +23,8 @@ export default function HomeScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text>ホーム画面</Text>
-      <StatusBar style="auto" />
+      <Checkmark complete={true} onPress={(complete) => console.log(complete)}></Checkmark>
+      <StatusBar style="light" />
     </View>
   );
 }
