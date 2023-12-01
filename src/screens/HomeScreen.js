@@ -7,6 +7,8 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 // components import
 import Checkmark from '../components/Checkmark';
+import TodoListItem from '../components/TodoListItem';
+import FloatingButton from '../components/FlotingButton';
 
 export default function HomeScreen({ navigation }) {
   useLayoutEffect(() => {
@@ -23,7 +25,7 @@ export default function HomeScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Checkmark complete={true} onPress={(complete) => console.log(complete)}></Checkmark>
+      <FloatingButton onPress={() => {}}></FloatingButton>
       <StatusBar style="light" />
     </View>
   );
